@@ -1,25 +1,19 @@
-📌 URL Shortener
+# Clone repo
+git clone https://github.com/VinayPal90/URL-Shortnered.git
 
-A simple MERN stack application that allows users to shorten long URLs, generate QR codes, and track the number of clicks.
+# Go to project folder
+cd URL-Shortnered
 
-🚀 Features
+# Install backend dependencies
+cd backend
+npm install
 
-Shorten long URLs into unique short links
+# Start backend server
+npm start
 
-Auto-generate QR code for each short URL
+# In a new terminal: install frontend dependencies
+cd ../frontend
+npm install
 
-Redirect users to the original URL
-
-Track click count for analytics
-
-Built with MongoDB, Express, React, Node.js
-
-🛠️ Tech Stack
-
-Frontend: React, Tailwind CSS, Axios
-Backend: Node.js, Express.js, Mongoose, NanoID, QRCode
-Database: MongoDB (Atlas)
-Deployment: Render / Netlify
-
-⚡ Getting Started
-1️⃣ Clone the repository
+# Start frontend
+npm start
