@@ -13,7 +13,7 @@ function App() {
     //console.log(originalUrl)
     // backend me originalUrl bhejne k liye aur response lene k liye..
 
-    axios.post('http://localhost:3000/api/short',{originalUrl})
+    axios.post('https://backend-url-shortnered.onrender.com/api/short',{originalUrl})
     .then((res)=>{
       setShortUrl(res.data)
  //res.data.url.shortUrl, 
