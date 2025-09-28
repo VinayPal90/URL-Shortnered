@@ -8,12 +8,13 @@ function App() {
   const [shortUrl,setShortUrl]=useState('')
   const [clicks, setClicks] = useState(0)
 
+  const url = "https://backend-url-shortnered.onrender.com";
 
   const handleSubmit=()=>{
     //console.log(originalUrl)
     // backend me originalUrl bhejne k liye aur response lene k liye..
 
-    axios.post('https://backend-url-shortnered.onrender.com/api/short',{originalUrl})
+    axios.post(`${url}/api/short,{originalUrl})
     .then((res)=>{
       setShortUrl(res.data)
  //res.data.url.shortUrl, 
