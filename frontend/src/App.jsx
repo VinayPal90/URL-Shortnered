@@ -14,7 +14,7 @@ function App() {
     //console.log(originalUrl)
     // backend me originalUrl bhejne k liye aur response lene k liye..
 
-    axios.post(`${url}/api/short,{originalUrl})
+    axios.post(`${url}/api/short`,{originalUrl})
     .then((res)=>{
       setShortUrl(res.data)
  //res.data.url.shortUrl, 
