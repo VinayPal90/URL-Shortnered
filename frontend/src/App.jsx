@@ -8,9 +8,11 @@ function App() {
   const [shortUrl,setShortUrl]=useState('')
   const [clicks, setClicks] = useState(0)
 
+
   const handleSubmit=()=>{
     //console.log(originalUrl)
     // backend me originalUrl bhejne k liye aur response lene k liye..
+
     axios.post('http://localhost:3000/api/short',{originalUrl})
     .then((res)=>{
       setShortUrl(res.data)
@@ -19,6 +21,7 @@ function App() {
     })
     .catch((err)=>console.log(err))
   }
+
 
   return (
 
