@@ -44,7 +44,7 @@ app.post('/api/short',async (req,res)=>{
         const shortUrl = nanoid(8)
         const url = new Url({originalUrl, shortUrl})
         // for qrcode 2 line
-        const myUrl = `http://localhost:3000/${shortUrl}`
+        const myUrl = `https://backend-url-shortnered.onrender.com/${shortUrl}`
         const qrCodeImg = await QRCode.toDataURL(myUrl)
         await url.save()
         return res.status(200).json({message:"URL Generated", shortUrl: myUrl,qrCodeImg}) //url: url
