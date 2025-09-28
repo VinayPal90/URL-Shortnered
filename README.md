@@ -4,7 +4,7 @@ git clone https://github.com/VinayPal90/URL-Shortnered.git
 # Go to project folder
 cd URL-Shortnered
 
-# Install backend dependencies
+# Install backend dependencies 
 cd backend
 npm install
 
